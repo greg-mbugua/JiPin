@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+}
+.header .sign_up_button{
+    float: right;
+    justify-content: space-between;
+}
+.Logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+}
+.home-page-nav{
+    background-color: orange;
+    justify-content: space-between;
+    padding: 14px 110px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.sign_up_button{
+    float: right;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+.home-page-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
