@@ -45,3 +45,9 @@ body{
 .checked{
     color: orange;
 }
+.star-rate p{
+    font-size: small;
+}
+.customer_review p{
+    font-size: smaller;
+}
