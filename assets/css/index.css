@@ -51,3 +51,23 @@ body{
 .customer_review p{
     font-size: smaller;
 }
+.rate-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-section h3{
+text-align: center;
+margin-top: 100px;
+}
+.customer_review .images{
+    border-radius: 10px;
+}
+.flex_blue_content{
+    font-family: impact, haettnschwiler,'Ariaal narrwo';
+    display: inline-flex;
+    justify-content: orange;
+    padding: 30px 150px 120px;
+    color: #ffff;
+    background-color: orange;
+    margin-top: 300px;
+}
