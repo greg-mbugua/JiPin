@@ -42,3 +42,6 @@ body{
 .icons{
     text-align: center;
 }
+.checked{
+    color: orange;
+}
