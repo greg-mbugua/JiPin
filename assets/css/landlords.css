@@ -16,10 +16,10 @@ body{
     margin : auto;
     box-shadow: 3px 3px 8px grey
 }
-/* h1{ 
+h1{ 
     text-decoration-line: underline ;
 }
-.rose-landowner, .kamau-landowner, .lillian-landowner{
+/*.rose-landowner, .kamau-landowner, .lillian-landowner{
     background-color: #f5f5f5;
 }
 .name_location{
@@ -44,8 +44,8 @@ img{
     width: 5em;
     height: auto;
     padding: 0.3em;
-} */
-
+}  */
+ 
 
 
 
