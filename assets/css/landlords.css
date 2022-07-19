@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    width : 100%;
+    background-image: url("../images/landlords.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.how_it_works{
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width : 80% ;
+    margin : auto;
+    box-shadow: 3px 3px 8px grey
+}
+/* h1{ 
+    text-decoration-line: underline ;
+}
+.rose-landowner, .kamau-landowner, .lillian-landowner{
+    background-color: #f5f5f5;
+}
+.name_location{
+    display: flex;
+ 
+}
+.reviews h3{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    
+}
+img{
+    width: 1em;
+    height: auto;
+}
+#rose {
+    width: 3em;
+    height: auto;
+    padding: 0.3em;
+}
+#kamau , #lillian{
+    width: 5em;
+    height: auto;
+    padding: 0.3em;
+} */
+
+
+
+
