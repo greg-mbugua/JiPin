@@ -8,10 +8,26 @@ body{
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     background-size: 100% 100%;
     opacity: 60%;
-
 }
-hr{ 
-    width: 3%;
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    width: 99%;
+    margin: 10% 0%;
+    border: solid 4px black;
+    position: relative;
+}
+.container .follow {
+    width: 40%;
+}
+.container .contact {
+    /* border: solid 1px black; */
+    background-color: #f97d0b;
+    width: 59%;
+    margin: 2%;
 }
