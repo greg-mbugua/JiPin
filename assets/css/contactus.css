@@ -30,4 +30,24 @@ body{
     background-color: #f97d0b;
     width: 59%;
     margin: 2%;
+    padding: 15px;
+}
+#us {
+    display:flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+}
+.tenant{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-between;
 }
