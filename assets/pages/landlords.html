@@ -18,16 +18,30 @@
         </div>
         <div class="list-property">
             <div class="how-it-works">
-                <h1> How It Works </h1>
-                <p> Create Create your listings within 5 minutes from the comfort of your home and multiply your chances,
-                    thousands of potential tenants from all over the country are looking for an apartment daily.</p> 
-                <p>Save yourself the hassle of showing your apartment over and over again. 
-                    With us, viewings and bookings are made directly online.</p>
-                <button id="list"> List Your Property !! </button>
+                <div>
+                    <h1> How It Works </h1>
+                </div>
+                <div class="description">
+                    <p> Create Create your listings within 5 minutes from the comfort of your home and multiply your chances,
+                        thousands of potential tenants from all over the country are looking for an apartment daily.</p> 
+                    <p>Save yourself the hassle of showing your apartment over and over again. 
+                        With us, viewings and bookings are made directly online.</p>
+                    <button id="list"> List Your Property !! </button>
+                </div>
             </div>
             <div>
                 <div class="sign-ups">
                     <div class="sign-up-section">
+                        <div >
+                            <nav class="selection">
+                                <div class="sign-up">
+                                    <h2> <button>Sign In</button></h2>
+                                </div>
+                                <div class="log-in">
+                                    <h2> <button>Log In</button></h2>
+                                </div>
+                            </nav>
+                        </div>
                         <div class="your-account">
                             <h2> Sign Up for Your Account</h2>
                         </div>
@@ -87,6 +101,16 @@
                
                 <div class="log-ins">
                     <div class="log-in-section">
+                        <div >
+                            <nav class="selection">
+                                <div class="sign-up">
+                                    <h2> <button>Sign In</button></h2>
+                                </div>
+                                <div class="log-in">
+                                    <h2> <button>Log In</button></h2>
+                                </div>
+                            </nav>
+                        </div>
                         <div class="your-account">
                             <h2> Log in to Your Account</h2>
                         </div>
@@ -138,9 +162,78 @@
             
     
         </div>
+        <div>
+            <div class="property-listing">
+                <h1> List your Rental Property Details </h1>
+            </div>
+            <div class="property-details">
+                <div class="property-details-table">
+                    <table class="column">
+                        <tr>
+                            <td><p>County</p></td>
+                            <td> <input type="text" placeholder="County"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td><p>Town</p></td>
+                            <td> <input type="text" placeholder="Town"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><p>Property Type </p></td>
+                            <td>
+                                <select name="property" id="property">
+                                <option value="apartment"></option>
+                                <option value="apartment">Apartment</option>
+                                <option value="warehouse">Warehouse</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td><p>Bedrooms</p></td>
+                            <td> <input type="text" placeholder="No. of Bedrooms"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td><p>Rent</p></td>
+                            <td> <input type="number" placeholder="Rent (Ksh.)"></td>
+                        </tr>
+                    </table>
+                        
+                    <table class="column">
+                        <tr>
+                            <td >Constituency</td>
+                            <td> <input type="text" placeholder="Constituency"></td>
+                        </tr>
+                        <tr>
+                            <td>Street Address</td>
+                            <td> <input type="text" placeholder="Street Address"></td>
+                        </tr>
+                        <tr>
+                            <td><p> Size </p></td>
+                            <td> <input type="text" placeholder="Size(in sq.ft/ sq.metres)"></td>
+                        </tr>
+                        <tr>
+                            <td>Bathrooms</td>
+                            <td> <input type="text" placeholder="No. of Bathrooms"></td>
+                        </tr>
+                        <tr>
+                            <td>Deposit</td>
+                            <td> <input type="number" placeholder="Deposit (Ksh.)"></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div> 
+                    <button id="submit">Submit</button>
+                </div> 
+                
+            </div>
+        </div>
 
         <div>
-            <div>
+            <div class="customer-reviews">
                 <h1> What our landowners say about us </h1>
             </div>
             <div class="reviews">
