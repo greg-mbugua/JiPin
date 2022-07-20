@@ -1,6 +1,19 @@
 body{
-    background-image: url();
-}
+    background-image: url(/assets/images/home\ page\ background.jpeg);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: none;
+    width: 100%;
+    height: auto;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    
+} 
 .header{
     display: flex;
 }
@@ -13,23 +26,79 @@ body{
     float: left;
 }
 .home-page-nav{
-    background-color: orange;
+    background-color: #F97D0B;
     justify-content: space-between;
-    padding: 14px 110px;
+    padding: 5px 5px;
     text-decoration: none;
     font-size: 17px;
+    margin-top: 0;
 }
+.box{
+    width: 300px;
+    padding: 30px;
+    top: 50%;
+    /* left: 50%; */
+    /* position: absolute; */
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    float: right;
+    margin-top: 50px;
+
+}
+.box .h3{
+color: aliceblue;
+text-transform: uppercase;
+font-weight: bold;
+}
+.box input [type="text"], .box input [type="password"]{
+    border: 0;
+    background-color: none;
+    margin: 20px auto; 
+    display: block;
+    text-align: center;
+    border-color: blue;
+    padding: 14px 10px;
+    width: 100px;
+    outline: navy;
+    border-radius: 24px;
+    transition: 0.25px;
+
+}
+.box input [type="text"], .box input [type="password"]focus{
+border-color: #F97D0B;
+width: 100px;
+}
+.box input [type="submit"]{
+    border: 0;
+    background-color: none;
+    margin: 20px auto; 
+    display: block;
+    text-align: center;
+    border-color: rgb(193, 193, 225);
+    padding: 14px 10px;
+    outline: navy;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+.box input [type="submit"]:hover{
+    background-color: #F97D0B;
+}
+
+
+
+
 .sign_up_button{
     float: right;
     justify-content: space-between;
     border-radius: 10px;
-    
 }
 .home-page-nav ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+}
+.home-page-nav a{
+   text-decoration: none;
 }
 .about_section{
     text-align: center;
@@ -43,31 +112,60 @@ body{
     text-align: center;
 }
 .checked{
-    color: orange;
+    color: #F97D0B;
 }
-.star-rate p{
-    font-size: small;
-}
-.customer_review p{
-    font-size: smaller;
-}
-.rate-cards{
+.star-ratings{
     display: flex;
     justify-content: space-between;
 }
-.reviews-section h3{
-text-align: center;
-margin-top: 100px;
-}
-.customer_review .images{
-    border-radius: 10px;
+.customer-details{
+    display: flex;
+    justify-content: space-between;
+
 }
 .flex_blue_content{
-    font-family: impact, haettnschwiler,'Ariaal narrwo';
-    display: inline-flex;
-    justify-content: orange;
-    padding: 30px 150px 120px;
-    color: #ffff;
-    background-color: orange;
-    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
 }
+.card1{
+    box-shadow: 5px 5px 5px lightgray;
+    /* position: absolute; */
+    /* z-index: 10; */
+}
+.images{
+    width: 20%;
+    border-radius: 50%;
+    display: flex;
+}
+
+.card2{
+    box-shadow: 5px 5px 5px lightgray; 
+}
+.card3{
+    box-shadow: 5px 5px 5px lightgray;
+}
+.footer{
+    background-color: #F97D0B;
+    margin-top: 50px;
+}
+.transparent_background{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background: rgba(110, 113, 116, 0.7);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: black
+    align-items: center;
+    margin-left: 50px;
+    /* background-color: #f1f1f8; */
+
+}
+
+
+
+
+
+
+
+
