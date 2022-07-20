@@ -13,7 +13,7 @@
     <body>
         <div class="nav-bar">
             <header>
-                <a href="#"><div class="Logo" style="color: #000;"><h1>JiPin</h1></div></a>
+                <a href="#"><div ><h1 class="Logo" style="color: #000;">JiPin</h1></div></a>
                 <nav class="home-page-nav" style="background-color: orange;">
                     <ul style="list-style: none;">
                        <li><a class="active" href="#home">Home</a></li>
@@ -27,7 +27,7 @@
                 </nav>
             </header>
         </div>
-        
+
         <div class="list-property">
             <div class="how-it-works">
                 <div>
@@ -183,18 +183,18 @@
                     <table class="column">
                         <tr>
                             <td><p>County</p></td>
-                            <td> <input type="text" placeholder="County"></td>
+                            <td> <input id="county" type="text" placeholder="County" required></td>
                         </tr>
                     
                         <tr>
-                            <td><p>Town</p></td>
-                            <td> <input type="text" placeholder="Town"></td>
+                            <td><p>City</p></td>
+                            <td> <input id="city" type="text" placeholder="City" required></td>
                         </tr>
                         
                         <tr>
                             <td><p>Property Type </p></td>
                             <td>
-                                <select name="property" id="property">
+                                <select id="propertyType" name="property" >
                                 <option value="apartment"></option>
                                 <option value="apartment">Apartment</option>
                                 <option value="warehouse">Warehouse</option>
@@ -202,20 +202,30 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><p>Building Name</p></td>
+                            <td> <input id="buildingName" type="text" placeholder="Building Name" required></td>
+                        </tr>
+                        <tr>
                             <td><p>Bedrooms</p></td>
-                            <td> <input type="text" placeholder="No. of Bedrooms"></td>
+                            <td> <input id="bedrooms" type="text" placeholder="No. of Bedrooms" required></td>
                         </tr>
                         <tr>
                             <td><p>Availability</p></td>
-                            <td> <input type="text" placeholder="Availability"></td>
+                            <td> 
+                                <select id="availability" name="property">
+                                    <option value="availability"></option>
+                                    <option value="available">Available</option>
+                                    <option value="Not available">Not available</option>
+                                    </select>
+                            </td>
                         </tr>
                         <tr>
                             <td><p>Contact Person</p></td>
-                            <td> <input type="text" placeholder="Contact Person"></td>
+                            <td> <input id="contactPerson" type="text" placeholder="Contact Person" required></td>
                         </tr>
                         <tr>
                             <td><p>Rent</p></td>
-                            <td> <input type="number" placeholder="Rent (Ksh.)"></td>
+                            <td> <input id="rent" type="number" placeholder="Rent (Ksh.)" required></td>
                         </tr>
                         
                     </table>
@@ -223,38 +233,42 @@
                     <table class="column">
                         <tr>
                             <td >Constituency</td>
-                            <td> <input type="text" placeholder="Constituency"></td>
+                            <td> <input id="constituency" type="text" placeholder="Constituency" required></td>
                         </tr>
                         <tr>
                             <td>Street Address</td>
-                            <td> <input type="text" placeholder="Street Address"></td>
+                            <td> <input id="streetAddress" type="text" placeholder="Street Address" required></td>
                         </tr>
                         <tr>
                             <td><p> Size </p></td>
-                            <td> <input type="text" placeholder="Size(in sq.ft/ sq.metres)"></td>
+                            <td> <input id="size" type="text" placeholder="Size(in sq.ft/ sq.metres)" required></td>
+                        </tr>
+                        <tr>
+                            <td><p> Apartment No. </p></td>
+                            <td> <input id="apartmentNo" type="text" placeholder="Apartment No." required></td>
                         </tr>
                         <tr>
                             <td>Bathrooms</td>
-                            <td> <input type="text" placeholder="No. of Bathrooms"></td>
+                            <td> <input id="bathrooms" type="text" placeholder="No. of Bathrooms" required></td>
                         </tr>
                         <tr>
                             <td>Landlord</td>
-                            <td> <input type="text" placeholder="Landlord"></td>
+                            <td> <input id="landlord" type="text" placeholder="Landlord" required></td>
                         </tr>
                         <tr>
                             <td>Contact Phone Number</td>
-                            <td> <input type="number" placeholder="Contact Phone Number"></td>
+                            <td> <input id="phoneNumber" type="number" placeholder="Contact Phone Number" required></td>
                         </tr>
                         <tr>
                             <td>Deposit</td>
-                            <td> <input type="number" placeholder="Deposit (Ksh.)"></td>
+                            <td> <input id="deposit" type="number" placeholder="Deposit (Ksh.)" required></td>
                         </tr>
                         
 
                     </table>
                 </div>
                 <div> 
-                    <button id="submit">Submit</button>
+                    <button type="submit" id="submit" onclick="addProperty()">Submit</button>
                 </div> 
                 
             </div>
@@ -319,6 +333,6 @@
 
         
 
-    <script src="assets/script/index.js"></script>  
+    <script src="assets/script/landlords.js"></script>  
     </body>
 </html>
