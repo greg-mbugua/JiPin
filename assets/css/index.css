@@ -17,10 +17,17 @@ a:hover{
     font-size: 20px;
 }
 .button{
-border-bottom: 1px #ffffff solid;
+    padding: 7px 15px;
+    background: #F97D0B;
+    border-bottom: 1px #ffffff solid;
+    border-radius: 50em;
 }
 .item_button{
     border-bottom: 1px #ffffff solid;
+    padding: 7px 15px;
+    background: #F97D0B;
+    border-bottom: 1px #ffffff solid;
+    border-radius: 50em;
 }
 .header{
     display: flex;
