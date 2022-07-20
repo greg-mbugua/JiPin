@@ -8,12 +8,20 @@ body{
     min-height: 100%;
     min-width: none;
     width: 100%;
-    height: auto;
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    
+    height: auto;  
+}
+a:hover{
+    text-decoration: underline;
 } 
+.logo a{
+    font-size: 20px;
+}
+.button{
+border-bottom: 1px #ffffff solid;
+}
+.item_button{
+    border-bottom: 1px #ffffff solid;
+}
 .header{
     display: flex;
 }
