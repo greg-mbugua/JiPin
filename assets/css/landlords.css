@@ -8,14 +8,61 @@ body{
     background-position: center;
     font-family: "Quicksand";
 }
+a:hover{
+    text-decoration: underline;
+}
+.logo a{
+    font-size: 20px;
+}
+.button{
+    padding: 7px 15px;
+    background: #F97D0B;
+    border-bottom: 1px #FFFFFF solid;
+    border-radius: 50em;
+}
+.item_button{
+    text-decoration: none;
+    border-bottom: 1px #FFFFFF solid;
+    padding: 7px 15px;
+    background: #F97D0B;
+    border-bottom: 1px #FFFFFF solid;
+    border-radius: 50em;
+}
+.button a:hover{
+    transition:all .25s;
+}
+.header{
+    display: flex;
+}
+.header .sign_up_button{
+    float: right;
+    justify-content: space-between;
+}
+.Logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+}
+.home-page-nav{
+    background-color: #F97D0B;
+    justify-content: space-between;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 0;
+}
+.home-page-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ 
 .how-it-works{
     text-align: center;
     /* background-color: #f5f5f5; */
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    width : 80% ;
-    margin : auto;
 }
 .description{
     padding: 5%;
