@@ -41,13 +41,52 @@ body{
     display: flex;
     justify-content: space-between;
     height: 30vh;
+    margin-right: 10%;
 }
 .tenant{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
-
+#name , #email , #subject{
+    height: 3vh;
+    width: 450px;
+    margin-bottom: 5%;
+}
+button{
+    color: #fff;
+    background-color: blue;
+    height: 3vh;
+    width: 20%;
+}
+.fa-map-marker{
+    background-color: #fff;
+    margin-left: 20%;
+}
+.location p{
+    font-weight: bolder;
+    font-size: x-large;
+}
 .container3{
     display: flex;
     justify-content: space-between;
+    margin-right: 5%;
+}
+.address{
+    background-color: white;
+    width: 30%;
+    height: 24vh;
+    padding: 30px;
+}
+.address h4{
+    margin-left:90px ;
+}
+
+.address p{
+    font-size: large;
+    margin-left: 40px;
+    margin-top: 5%;
+}
+#address{
+    margin-left: 90px;
 }
