@@ -84,9 +84,6 @@ width: 100px;
     background-color: #F97D0B;
 }
 
-
-
-
 .sign_up_button{
     float: right;
     justify-content: space-between;
@@ -120,7 +117,7 @@ width: 100px;
 }
 .customer-details{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
 .flex_blue_content{
@@ -129,8 +126,11 @@ width: 100px;
 }
 .card1{
     box-shadow: 5px 5px 5px lightgray;
-    /* position: absolute; */
-    /* z-index: 10; */
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: black
 }
 .images{
     width: 20%;
@@ -139,10 +139,23 @@ width: 100px;
 }
 
 .card2{
-    box-shadow: 5px 5px 5px lightgray; 
+    box-shadow: 5px 5px 5px lightgray;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: black
 }
 .card3{
     box-shadow: 5px 5px 5px lightgray;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: black
+}
+.card3: :hover{
+    
 }
 .footer{
     background-color: #F97D0B;
@@ -158,8 +171,6 @@ width: 100px;
     color: black
     align-items: center;
     margin-left: 50px;
-    /* background-color: #f1f1f8; */
-
 }
 
 
