@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Quicksand";
+    font-size: large;
 }
 .list ul{
     display: flex;
@@ -22,18 +22,24 @@ section{
 }
 .image{
     image-rendering: crisp-edges;
+    shape-image-threshold: inherit;
+    box-shadow: #F97D0B;
     
 }
 .apartments{
     text-align: end;
 }
 #background{
-    background-image: url("./images/images/wh1.jpg");
-    width: inherit;
-    height: 500px;
+    background-image: url(./images/images/wh1.jpg);
     background-repeat: no-repeat;
-    background-repeat: inherit;
+    background-size: cover;
+    width: inherit;
+    height:500px
 
+}
+h1{
+    font-size: 24px;
+    text-decoration: underline orange;
 }
 a:hover{
     text-decoration: underline;
@@ -81,4 +87,19 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.list > ul > li >label{
+    font-size: large;
+}
+.flex_blue_content{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_blue_content .h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.footer{
+    background-color: #F97D0B;
+    margin-top: 50px;
 }
