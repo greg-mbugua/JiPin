@@ -6,38 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="apartments.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Our apartments</h1>
-    <div>
-        <ul>
-            <li>Location</li>
-            <li>Price</li>
-            <li>Bedrooms</li>
-            <li>Availability</li>
-        </ul>
-    </div>
-    <section>
+    <div id="background">
         <div>
-            <img>
+            <header>
+                <nav></nav>
+            </header>
+        </div>
+        <section>
+            <div class="list">
+                <ul>
+                    <li>
+                        <label for="loc">Location</label>
+                        <select name="location" id="loc">
+                            <option value="kiambu">Kiambu</option>
+                            <option value="nakuru">Nakuru</option>
+                            <option value="nairobi">Nairobi</option>
+                            <option value="kajiado">Kajiado</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="ksh">Price</label>
+                        <select name="price" id="ksh">
+                           <option value="10k">10,000ksh</option>
+                           <option value="20k">20,000ksh</option>
+                           <option value="30k">30,000ksh</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="rooms">Bedrooms</label>
+                        <select name="bedrooms" id="rooms">
+                          <option value="One-bed">One Bedroom</option>
+                          <option value="two-bed">Two Bedrooms</option>
+                          <option value="three-bed">Three Bedroom</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="available">Availability</label>
+                        <select name="availability" id="available">
+                          <option value="available">Available</option>
+                          <option value="unavailable">Not Available</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <section class="apartments">
+        <h1>Our apartments</h1>
+    </section>
+    <section>
+        <div class="kiambu">
+            <img class="image" src="../images/apt5.jpg" alt="image of living room">
             <p>Kiambu</p>
             <p>Price: Ksh 25,000 per month</p>
             <p>Type:  Bedroom</p>
         </div>
-        <div>
-            <img>
+        <div class="Nakuru">
+            <img class="image" src="../images/Apt1.jpg">
             <p>County: Nakuru</p>
             <p>Price: Ksh. 30,000 per month</p>
             <p>Type: 2 Bedroom</p>
         </div>
-        <div>
-            <img>
+        <div class="Nairobi">
+            <img class="image" src="../images/apt3.jpg">
             <p>County: Nairobi</p>
             <P>Price: Ksh. 45,000 per month</P>
             <p>Type: 3 Bedroom</p>
          </div>
-         <button>See more</button>
-
     </section>
 </body>
 </html>
