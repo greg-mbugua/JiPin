@@ -1,0 +1,183 @@
+body{
+    background-image: url(/assets/images/home\ page\ background.jpeg);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* height: 100vh; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: none;
+    width: 100%;
+    height: auto;  
+}
+a:hover{
+    text-decoration: underline;
+} 
+.logo a{
+    font-size: 20px;
+}
+.button{
+    padding: 7px 15px;
+    background: #F97D0B;
+    border-bottom: 1px #ffffff solid;
+    border-radius: 50em;
+}
+.item_button{
+    text-decoration: non;
+    border-bottom: 1px #ffffff solid;
+    padding: 7px 15px;
+    background: #F97D0B;
+    border-bottom: 1px #ffffff solid;
+    border-radius: 50em;
+}
+.button a:hover{
+    transition:all .25s;
+}
+.header{
+    display: flex;
+}
+
+.Logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+}
+.home-page-nav{
+    background-color: #F97D0B;
+    justify-content: space-between;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 0;
+}
+
+.box .h3{
+color: aliceblue;
+text-transform: uppercase;
+font-weight: bold;
+}
+.box input [type="text"], .box input [type="password"]{
+    border: 0;
+    background-color: none;
+    margin: 20px auto; 
+    display: block;
+    text-align: center;
+    border-color: blue;
+    padding: 14px 10px;
+    width: 100px;
+    outline: navy;
+    border-radius: 24px;
+    transition: 0.25px;
+
+}
+.box input [type="text"], .box input [type="password"]focus{
+border-color: #F97D0B;
+width: 100px;
+}
+.box input [type="submit"]{
+    border: 0;
+    background-color: none;
+    margin: 20px auto; 
+    display: block;
+    text-align: center;
+    border-color: rgb(193, 193, 225);
+    padding: 14px 10px;
+    outline: navy;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+.box input [type="submit"]:hover{
+    background-color: #F97D0B;
+}
+
+.sign_up_button{
+    float: right;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.home-page-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-page-nav a{
+   text-decoration: none;
+}
+.about_section{
+    text-align: center;
+    margin-top: 100px;
+}
+.GetStarted_section{
+    text-align: center;
+    margin-top: 100px;
+}
+.icons{
+    text-align: center;
+}
+.checked{
+    color: #F97D0B;
+}
+.star-ratings{
+    display: flex;
+    justify-content: space-around;
+}
+.customer-details{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.flex_blue_content{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_blue_content .h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.card{
+    box-shadow: 5px 5px 5px lightgray;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: black;
+    padding-left: 20px;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+
+.images{
+    width: 20%;
+    border-radius: 50%;
+    display: flex;
+}
+
+.footer{
+    background-color: #F97D0B;
+    margin-top: 50px;
+}
+.transparent_background{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background: rgba(110, 113, 116, 0.7);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: black;
+    align-items: center;
+    margin-left: 50px;
+}
+.list_items a{
+    text-decoration: none;
+}
+.re_views{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
