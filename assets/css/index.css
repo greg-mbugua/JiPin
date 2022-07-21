@@ -36,10 +36,7 @@ a:hover{
 .header{
     display: flex;
 }
-/* .header .sign_up_button{
-    float: right;
-    justify-content: space-between;
-} */
+
 .Logo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: left;
@@ -52,13 +49,6 @@ a:hover{
     font-size: 17px;
     margin-top: 0;
 }
-/* .box{
-    width: 300px;
-    padding: 30px;
-    top: 50%;
-    /* left: 50%; */
-    /* position: absolute; */
-    background: rgba(0, 0, 0, 0.3);
 
 .box .h3{
 color: aliceblue;
@@ -139,6 +129,10 @@ width: 100px;
     display: flex;
     justify-content: space-between;
 }
+.flex_blue_content .h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
 .card{
     box-shadow: 5px 5px 5px lightgray;
     position: relative;
@@ -169,13 +163,15 @@ width: 100px;
     background: rgba(110, 113, 116, 0.7);
     border: 1px solid #ffffff;
     border-radius: 20px;
-    color: black
+    color: black;
     align-items: center;
     margin-left: 50px;
 }
 .list_items a{
     text-decoration: none;
-
+}
+.re_views{
+    text-align: center;
 }
 
 
