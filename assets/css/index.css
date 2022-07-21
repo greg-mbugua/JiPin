@@ -2,7 +2,7 @@ body{
     background-image: url(/assets/images/home\ page\ background.jpeg);
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 100vh;
+    /* height: 100vh; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -23,19 +23,23 @@ a:hover{
     border-radius: 50em;
 }
 .item_button{
+    text-decoration: non;
     border-bottom: 1px #ffffff solid;
     padding: 7px 15px;
     background: #F97D0B;
     border-bottom: 1px #ffffff solid;
     border-radius: 50em;
 }
+.button a:hover{
+    transition:all .25s;
+}
 .header{
     display: flex;
 }
-.header .sign_up_button{
+/* .header .sign_up_button{
     float: right;
     justify-content: space-between;
-}
+} */
 .Logo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: left;
@@ -48,18 +52,14 @@ a:hover{
     font-size: 17px;
     margin-top: 0;
 }
-.box{
+/* .box{
     width: 300px;
     padding: 30px;
     top: 50%;
     /* left: 50%; */
     /* position: absolute; */
     background: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    float: right;
-    margin-top: 50px;
 
-}
 .box .h3{
 color: aliceblue;
 text-transform: uppercase;
@@ -128,7 +128,7 @@ width: 100px;
 }
 .star-ratings{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .customer-details{
     display: flex;
@@ -139,39 +139,25 @@ width: 100px;
     display: flex;
     justify-content: space-between;
 }
-.card1{
+.card{
     box-shadow: 5px 5px 5px lightgray;
     position: relative;
     background: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 20px;
-    color: black
+    color: black;
+    padding-left: 20px;
 }
+.card:hover{
+    transform: scale(1.2);
+}
+
 .images{
     width: 20%;
     border-radius: 50%;
     display: flex;
 }
 
-.card2{
-    box-shadow: 5px 5px 5px lightgray;
-    position: relative;
-    background: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    color: black
-}
-.card3{
-    box-shadow: 5px 5px 5px lightgray;
-    position: relative;
-    background: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    color: black
-}
-.card3: :hover{
-    
-}
 .footer{
     background-color: #F97D0B;
     margin-top: 50px;
