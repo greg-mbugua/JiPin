@@ -6,12 +6,16 @@ body{
     background-repeat: no-repeat;
     background-position: center; 
     font-family: "Quicksand";
+
 }
+
+/*This section is for the navbar*/
 .nav-bar h1{
     text-decoration: none;
 }
 .nav-bar a{
     text-decoration: none;
+    color: white;
 }
 a:hover{
     text-decoration: underline;
@@ -19,20 +23,14 @@ a:hover{
 .logo a{
     font-size: 20px;
 }
-.button{
+.button, .item_button{
     padding: 7px 15px;
     background: #F97D0B;
-    border-bottom: 1px #FFFFFF solid;
+    border: 1px #FFFFFF solid;
     border-radius: 50em;
+    margin: 0;
 }
-.item_button{
-    text-decoration: none;
-    border-bottom: 1px #FFFFFF solid;
-    padding: 7px 15px;
-    background: #F97D0B;
-    border-bottom: 1px #FFFFFF solid;
-    border-radius: 50em;
-}
+
 .button a:hover{
     transition:all .25s;
 }
@@ -52,7 +50,8 @@ a:hover{
     justify-content: space-between;
     padding: 5px 5px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.3em;
+    font-weight: 600;
     margin-top: 0;
     
 }
@@ -63,8 +62,9 @@ a:hover{
 }
 .nav-bar{
     width: 100%;
+    background-color: #F97D0B;
 }
-
+/*End of navbar*/
  
 .how-it-works{
     text-align: center;
@@ -72,11 +72,14 @@ a:hover{
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.3em;
+    /* color: #f5f5f5; */
 }
 .description{
-    padding: 5%;
-    background-color: #f5f5f5;
-    box-shadow: inset 3px 3px 8px grey
+    padding: 2%;
+    background-color: rgba(249, 125, 11, 0.5) ;
+    box-shadow: inset 3px 3px 8px white
 }
 h1{ 
     text-decoration-line: underline ;
@@ -142,15 +145,29 @@ img{
  display: flex;
  justify-content: space-around;
 }
- .sign-up button, .log-in button{
-    width : 130%;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 0.5em;
-    border: none;
-    box-shadow: 3px 3px 8px lightgray;
-    color: #F97D0B;
-} 
+/* close button      */
+.close-button, .close-sign-up-button{
+        font-size: 30px;
+        font-weight: 600;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        width: 5%;
+        float: right;
+        margin-top: -0.9em;
+        margin-right: -0.9em;
+        border: none;
+}
+.close-button:hover{
+    background-color: #F97D0B;
+    color: #f5f5f5;
+    transition: all .25s;
+}
+.close-sign-up-button:hover{
+    background-color: #F97D0B;
+    color: #f5f5f5;
+    transition: all .25s;
+}
+
 
 .sign-up-section, .log-in-section{
     background-color: #f5f5f5;
@@ -235,57 +252,85 @@ img{
     color: #F97D0B;
 
 } 
+
+/*  property listing display     */
+.property{
+    display: none;
+}
+/*  end of property listing display     */
+
+
 .property-listing h1{
     color: #f5f5f5;
 }
 .property-details{
-    background-color: #f5f5f5;
+    background-color: rgba(249, 125, 11, 0.5) ;
     padding: 0.5em;
     border-radius: 1em;
-    box-shadow: inset 3px 3px 8px grey
+    box-shadow: inset 3px 3px 8px white
 }
 .property-details-table{
     display: flex;
     justify-content: space-evenly; 
     margin-top: 5%;
-    background-color: #f5f5f5;
+    font-weight: 600;
+    font-size: 1.3em;
+    
 }
 .column{
     text-align: center;
     margin-bottom: 2%;
+    margin-left:  0;
+    padding: 0;
 }
 
 .property-details-table input{
-    width: 150%;
-    height: 2.5em;
-    border-radius: 0.8em;
-    border: 1px solid black;
-    margin-bottom: 1em;
+   margin: 0;
+   padding: 1em;
+   border-radius: 10px;
+   border: 0;
+   font-family: "Quicksand", sans-serif;
+   font-size: 0.95em;
+    font-weight: 600;
+
     
 }
-.property-details select{
-    width: 150%;
-    height: 2.5em;
-    border-radius: 0.8em;
-    border: 1px solid black;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    font-size: 1em;
-    font-family: "Quicksand";
+#photo{
+    margin: 0;
+   padding: 1em;
+   border-radius: 10px;
+   border: 0;
+   font-family: "Quicksand", sans-serif;
+   font-size: 0.95em;
+    font-weight: 600;
+
 }
+.property-details select{
+    margin: 0;
+    padding: 1em;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8em;
+     font-weight: 600;
+     width: 60%;
+ 
+}
+/*  property listed output */
 #property-listed{
     margin-top: 0%;
     display: flex;
     justify-content: space-evenly; 
     margin-top: 5%;
-    background-color: #f5f5f5;
+
+    
 }
 #submit{
     width : 20%;
     height: 3em;
     margin-left: 45%;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     background-color: #F97D0B;
     border-radius: 10px;
@@ -307,12 +352,34 @@ img{
     width: 40%;
     display:none;
     position: absolute;
-    top:20%;
+    top:10%;
     left: 30%;
     opacity:1;
 } 
-
-
+/* this is the end of sign up section */
+.flex_blue_content{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_blue_content .h4{
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    
+}
+.footer{
+    background-color: #F97D0B;
+    margin-top: 50px;
+    padding: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+#footer-logo{
+    font-size: 1.5em;
+    
+}
 
 
 
