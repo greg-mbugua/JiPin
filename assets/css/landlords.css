@@ -6,8 +6,9 @@ body{
     background-repeat: no-repeat;
     background-position: center; 
     font-family: "Quicksand";
-    backgrou
+
 }
+/*This section is for the navbar*/
 .nav-bar h1{
     text-decoration: none;
 }
@@ -65,7 +66,7 @@ a:hover{
 .nav-bar{
     width: 100%;
 }
-
+/*End of navbar*/
  
 .how-it-works{
     text-align: center;
@@ -312,8 +313,17 @@ img{
     left: 30%;
     opacity:1;
 } 
-
-
+/* this is the sign up section */
+.flex_blue_content{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_blue_content .h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}.footer{
+    background-color: #F97D0B;
+    margin-top: 50px;
+}
 
 
 
