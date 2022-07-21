@@ -173,6 +173,10 @@ width: 100px;
     align-items: center;
     margin-left: 50px;
 }
+.list_items a{
+    text-decoration: none;
+
+}
 
 
 
