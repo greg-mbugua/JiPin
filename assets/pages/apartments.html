@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="apartments.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <div class="nav-bar">
+            <header>
+                <a href="#"><div ><h1 class="Logo" style="color: #000;">JiPin</h1></div></a>
+                <nav class="home-page-nav" style="background-color: orange;">
+                    <ul style="list-style: none;">
+                       <li><a class="active" href="#home">Home</a></li>
+                        <li class="item"><a href="#">Apartments</a></li>
+                        <li class="item"><a href="#">ware-house</a></li>
+                        <li class="item"><a href="#">Landlords</a></li>
+                        <li class="item"><a href="#">Contact Us</a></li>
+                        <li class="button"><a href="#">Login</a></li>
+                        <li class="item_button"><a href="#">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <section>
+            <div class="list">
+                <ul>
+                    <li>
+                        <label for="loc">Location</label>
+                        <select name="location" id="loc">
+                            <option value="kiambu">Kiambu</option>
+                            <option value="nakuru">Nakuru</option>
+                            <option value="nairobi">Nairobi</option>
+                            <option value="kajiado">Kajiado</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="ksh">Price</label>
+                        <select name="price" id="ksh">
+                           <option value="10k">10,000ksh</option>
+                           <option value="20k">20,000ksh</option>
+                           <option value="30k">30,000ksh</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="rooms">Bedrooms</label>
+                        <select name="bedrooms" id="rooms">
+                          <option value="One-bed">One Bedroom</option>
+                          <option value="two-bed">Two Bedrooms</option>
+                          <option value="three-bed">Three Bedroom</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="available">Availability</label>
+                        <select name="availability" id="available">
+                          <option value="available">Available</option>
+                          <option value="unavailable">Not Available</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <section class="apartments">
+        <h1>Our apartments</h1>
+    </section>
+    <section>
+        <div class="kiambu">
+            <img class="image" src="../images/apt5.jpg" alt="image of living room">
+            <p>Kiambu</p>
+            <p>Price: Ksh 25,000 per month</p>
+            <p>Type:  Bedroom</p>
+        </div>
+        <div class="Nakuru">
+            <img class="image" src="../images/Apt1.jpg">
+            <p>County: Nakuru</p>
+            <p>Price: Ksh. 30,000 per month</p>
+            <p>Type: 2 Bedroom</p>
+        </div>
+        <div class="Nairobi">
+            <img class="image" src="../images/apt3.jpg">
+            <p>County: Nairobi</p>
+            <P>Price: Ksh. 45,000 per month</P>
+            <p>Type: 3 Bedroom</p>
+         </div>
+    </section>
+</body>
+</html>
