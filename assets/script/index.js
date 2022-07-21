@@ -46,11 +46,6 @@ logInLink.addEventListener('click', function () {
     signUpSection.style.display = 'none';
 });
 
-
-
-
-
-
 // the sign up button will call the sign up section
 signUpButton.addEventListener('click', function () {
     signUpSection.style.display = 'none';
