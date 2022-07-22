@@ -11,33 +11,38 @@ body{
     height: auto;  
     font-family: 'Quicksand';
 }
+
+.nav-bar h1{
+    text-decoration: none;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
 a:hover{
     text-decoration: underline;
-} 
+}
 .logo a{
     font-size: 20px;
 }
-.button{
+.button, .item_button{
     padding: 7px 15px;
     background: #F97D0B;
-    border-bottom: 1px #ffffff solid;
+    border: 1px #FFFFFF solid;
     border-radius: 50em;
+    margin: 0;
 }
-.item_button{
-    text-decoration: non;
-    border-bottom: 1px #ffffff solid;
-    padding: 7px 15px;
-    background: #F97D0B;
-    border-bottom: 1px #ffffff solid;
-    border-radius: 50em;
-}
+
 .button a:hover{
     transition:all .25s;
 }
 .header{
     display: flex;
 }
-
+.header .sign_up_button{
+    float: right;
+    justify-content: space-between;
+}
 .Logo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: left;
@@ -47,8 +52,19 @@ a:hover{
     justify-content: space-between;
     padding: 5px 5px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.3em;
+    font-weight: 600;
     margin-top: 0;
+    
+}
+.home-page-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar{
+    width: 100%;
+    background-color: #F97D0B;
 }
 
 .box .h3{
