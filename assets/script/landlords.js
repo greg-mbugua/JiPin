@@ -1,10 +1,21 @@
 let county, constituency, city, streetAddress, propertyType, propertyTypeValue, size, buildingName, apartmentNo, bedrooms, bathrooms, availability, availabilityValue, landlord, contactPerson, phoneNumber, rent, deposit;
+
+
+
 const navLogIn = document.getElementById('navLogIn');
 const navSignUp = document.getElementById('navSignUp');
-
-
 const logInSection = document.querySelector('.log-ins');
 const container = document.querySelector('.container');
+const closeButton = document.querySelector('.close-button');
+const closeSignUpButton = document.querySelector('.close-sign-up-button');
+const list = document.getElementById('list');
+const property = document.querySelector('.property');
+const logInButton = document.getElementById('log-in'); 
+const signUpLink = document.getElementById('sign-up-link');
+const signUpSection = document.querySelector('.sign-ups');
+const signUpButton = document.getElementById('sign-up');
+const logInLink = document.getElementById('log-in-link');
+
 
 
 county = document.getElementById("county");
@@ -25,6 +36,7 @@ contactPerson = document.getElementById("contactPerson");
 phoneNumber = document.getElementById("phoneNumber");
 rent = document.getElementById("rent");
 deposit = document.getElementById("deposit");
+photo = document.getElementById("photo");
 
 
 propertyDetails = [];
@@ -46,8 +58,10 @@ function addProperty() {
         contactPerson: contactPerson.value,
         phoneNumber: phoneNumber.value,
         rent: rent.value,
-        deposit: deposit.value
+        deposit: deposit.value,
+        photo: photo.value
     });
+
     county.value = '';
     constituency.value = '';
     city.value = '';
@@ -64,6 +78,7 @@ function addProperty() {
     phoneNumber.value = '';
     rent.value = '';
     deposit.value = '';
+    // photo.value = {};
 
 
     document.getElementById("property-listed").innerHTML = stringifyPropertyDetails();
@@ -74,7 +89,7 @@ function addProperty() {
 function stringifyPropertyDetails() {
     let looped = '';
 	for (let i = 0; i < propertyDetails.length; i++) {
-		 looped += `<div class="display-properties"> 
+		 looped += `<div class="display-properties" style= background-color: rgba(249, 125, 11, 0.5) > 
                         <div>
                         <p> Property listing 1 :</p>
                         </div>
@@ -106,25 +121,73 @@ function stringifyPropertyDetails() {
 	return looped;
 }
 
+// list your property button will call the login section
+list.addEventListener('click', function () {
+    logInSection.style.display = 'block';
+    container.style.opacity = '0.1';
+    
+});
 
+// the login button will call the property details section
+logInButton.addEventListener('click', function () {
+    logInSection.style.display = 'none';
+    container.style.opacity = '1';
+    property.style.display = 'block';
+});
+
+
+// the navigation login button will call the login section
 navLogIn.addEventListener('click', function () {
     logInSection.style.display = 'block';
-    // container.style.position = 'fixed';
     container.style.opacity = '0.1';
+    
+});
+
+//the close button closes the login section .
+closeButton.addEventListener('click', function () {
+    logInSection.style.display = 'none';
+    container.style.opacity = '1';
+    
+});
+
+// call up sign up section
+signUpLink.addEventListener('click', function () {
+    logInSection.style.display = 'none';
+    signUpSection.style.display = 'block';
+    container.style.opacity = '0.1';
+
+});
+
+// nav sign up will call up sign up section
+navSignUp.addEventListener('click', function () {
+    signUpSection.style.display = 'block';
+    container.style.opacity = '0.1';
+    
+});
+//the close button closes the sign up section .
+closeSignUpButton.addEventListener('click', function () {
+    signUpSection.style.display = 'none';
+    container.style.opacity = '1';
+    
+});
+// the sign up button will call the sign up section
+signUpButton.addEventListener('click', function () {
+    signUpSection.style.display = 'none';
+    container.style.opacity = '1';
+    // property.style.display = 'block';
+
+});
+//the log in link will call the login section
+logInLink.addEventListener('click', function () {
+    logInSection.style.display = 'block';
+    signUpSection.style.display = 'none';
     
 });
 
 
 
-// var btn = document.getElementById("button");
-// var closeBtn = document.querySelector(".close");
-// var popupId = document.getElementById("popup");
-// btn.addEventListener("click", function(){ 
-//    popupId.style.display = "flex";
-// }) 
-// closeBtn.addEventListener("click", function(){
-//    popupId.style.display = "none";
-// })
+
+
 
 
 
